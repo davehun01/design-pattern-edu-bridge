@@ -1,0 +1,8 @@
+Bridge pattern exercise:
+The bridge design pattern is used to take a large monolithic class (or multiple monolithic classes) and separate them into an abstraction hierarchy and an implementation hierarchy. This allows us to change both hierarchies independently of each other, adding more flexibility to the code and avoids exponential growth of subclasses.
+Suppose we want to render certain shapes. The 2 known methods of rendering are via bitmap and vector graphics. Let's say, we want to draw squares and circles in both rendering methods. This results in 4 implementations, since we need to draw squares in both bitmap and vector rendering, same for the circles. So far it's not super complex, however as we add more and more shapes, the number of subclasses grows massively. Same goes for if we add more rendering methods. We cannot keep expanding in 2 dimensions and have a simple codebase with a monolithic architecture.
+This is where bridge pattern comes in. 
+
+Motivation: we want to separate the logic for shapes and rendering methods. For the sake of focusing on learning the design pattern, only the square class is required of the 2 shapes. Fill in the skeleton classes to implement the bridge pattern. Use Demo.java to test the results.
+
+
